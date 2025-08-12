@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inicio_salar">
+
+
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/postal_salar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Inicio de Sesión"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPoster" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_input"
+        android:hint="Nombre de Usuario"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="@color/hint_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="311dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_input"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="@color/hint_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUsuario" />
+
+    <TextView
+        android:id="@+id/tvRecuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="¿Recuperar contraseña?"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+    <ImageView
+            android:id="@+id/imgFooter"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:alpha="0.98"
+            app:layout_constraintTop_toBottomOf="@id/tvRecuperar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIngresar"
+        android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:layout_margin="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_button"
+        android:text="INGRESAR"
+        android:textAllCaps="true"
+        android:textColor="@color/button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgFooter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
